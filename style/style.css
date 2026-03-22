@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'inter';
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+}
+
+
+/*<------------------------------------CONFIGURAÇÃO GLOBAL---------------------------------------->*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*<------------------------------------------ VARIÁVEIS------------------------------------------->*/
+:root{
+    --preto: hsl(0, 0%, 8%);
+    --cinza-escuro: hsl(0, 0%, 12%);
+    --cinza: hsl(0, 0%, 20%);
+    --branco: hsl(0, 0%, 100%);
+    --verde-claro: hsl(75, 94%, 57%);
+
+    --fonte: 'inter';
+}
+
+/*<------------------------------------------ BODY ----------------------------------------------->*/
+body{
+    background-color: var(--preto);   
+}
+
+/*<------------------------------------------ CAIXA ---------------------------------------------->*/
+
+.caixa{
+    border: 5px solid var(--cinza-escuro);
+    border-radius: 10px;
+    background-color: var(--cinza-escuro);
+    height: 550px;
+    width: 80%;
+    max-width: 350px;
+    min-width: 280px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.foto{
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 100px;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    margin-top: 8%;
+    background-image: url(/assets/images/avatar-jessica.jpeg);
+    background-size: cover;
+}
+
+h2{
+    font-family: var(--fonte);
+    color: white;
+    text-align: center;
+    margin-top: 6%;
+    font-weight: 600;
+}
+
+p{
+    font-family: var(--fonte);
+    text-align: center;
+    color: var(--verde-claro);
+    font-size: 14px;
+    margin-top: 2%;
+    font-weight: 700;
+}
+
+.descricao{
+    color: white;
+    margin-top: 5%;
+    font-weight: 400;
+}
+
+
+a{
+    display: block;
+    background-color: var(--cinza);
+    border: 1px solid var(--cinza);
+    border-radius: 10px;
+    height: 44px;
+    margin: auto;
+    margin-top: 18px;
+    width: 80%;
+    color: white;
+    text-decoration: none;
+    font-family: var(--fonte);
+}
+
+a:hover{
+    background-color: var(--verde-claro);
+}
+
+a:hover > p{
+    color: black;
+}
+
+a > p{
+    color: white;
+    margin-top: 13px;
+}
+
+
+
